@@ -7,7 +7,7 @@ tags: [CentOS, PostgreSQL, ownCloud, EPEL]
 ---
 {% include JB/setup %}
 
-**Note:** This post is kind of a hybrid between a how-to and a story, about hove I have it done. You probably won't need to do it all stop by step. If you are reading this, because you actually want to install ownCloud with PostgreSQL on CentOS, read the text first and try it after you've read it all.
+**Note:** This post is kind of a hybrid between a how-to and a story, about how I have it done. You probably won't need to do it all stop by step. If you are reading this, because you actually want to install ownCloud with PostgreSQL on CentOS, read the text first and try it after you've read it all.
 
 Background
 ----------
