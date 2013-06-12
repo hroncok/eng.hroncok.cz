@@ -204,3 +204,5 @@ But, ownCloud would keep telling you it cannot writes to that directory. If you 
     chcon -t httpd_sys_rw_content_t /home/owncloud
 
 After that, I was able to fill the setup page of ownCloud and it worked. Sadly, I was not able to make the Dropbox sync working (yet).
+
+That's it, as said before *No manual configuration should be required* :D
