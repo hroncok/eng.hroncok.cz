@@ -22,8 +22,8 @@ That's bring me to [ownCloud](http://owncloud.org/), that supports all this - sy
 
 In our lab, we have several old computers and at least one of them should serve as a server just fine. e also have a lot of hard drives that should serve as RAID pool. It has been ages since I installed a server for some service and in that times, I used Debian stable. Right now, when I am Fedorian and Red Hatter, I've decided for CentOS. I have never tried it yet but what the hell, it has `yum`. At least I can recall [ownCloud is a feature for Fedora 19](http://fedoraproject.org/wiki/Features/OwnCloud) and the packages are available for EPEL (therefore for CentOS).
 
-VirtalBox
----------
+VirtualBox
+----------
 
 *Yes, you can skip this part too :)*
 
