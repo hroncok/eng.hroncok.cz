@@ -8,7 +8,7 @@ layout: none
 		<description>Posts categorized as 'fedora'</description>
 		<link>{{ site.url }}</link>
 		<atom:link href="{{ site.url }}/feed.category.xml" rel="self" type="application/rss+xml" />
-		{% for post in site.categories.EPEL limit:10 %}
+		{% for post in site.categories.Fedora limit:10 %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				<description>{{ post.content | xml_escape }}</description>
