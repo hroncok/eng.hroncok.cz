@@ -9,7 +9,7 @@ tags: [Python, Fedora, cloud]
 
 First of all, if you don't know anything about Python 3 in Fedora, go read [this](https://fedoraproject.org/wiki/Changes/Python_3_as_Default) before you go any further.
 
-OK, now when you have read it (you have, right?), let me try to explain what's needs to be done first and what's blocking us. There is [this gigantic table of packages that need to be ported to Python 3](https://fedoraproject.org/wiki/User:Churchyard/python3) - that means ship both 2 and 3 subpackages for modules, or use Python 3 interpreter for apps. From that, you can see what packages need some love. But it doesn't show what is important and what should be targeted first.
+OK, now when you have read it (you have, right?), let me try to explain what needs to be done first and what's blocking us. There is [this gigantic table of packages that need to be ported to Python 3](https://fedoraproject.org/wiki/User:Churchyard/python3) - that means ship both 2 and 3 subpackages for modules, or use Python 3 interpreter for apps. From that, you can see what packages need some love. But it doesn't show what is important and what should be targeted first.
 
 Cloud
 -----
