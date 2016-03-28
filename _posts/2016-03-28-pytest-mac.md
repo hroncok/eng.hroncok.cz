@@ -27,7 +27,8 @@ First you'll need [Vagrant](https://www.vagrantup.com/). On Fedora, you can use 
 the distribution and just do `dnf install vagrant`. I've used VirtualBox provider for it, because
 I think that it won't work with libvirt, the default Vagrant provider in Fedora. In fact I didn't
 even bother trying, so in case you'll try it and it works, let me know. To get VirtualBox on Fedora,
-I recommend the [RPM Fusion repository](http://rpmfusion.org/). I will not go into details, as I'm
+I recommend the [RPM Fusion repository](http://rpmfusion.org/). You'll also need the Oracle VM VirtualBox Extension Pack.
+I will not go into details, as I'm
 quite confident you are capable of installing VirtualBox yourselves :)
 
 Once you have both Vagrant and VirtualBox, create an empty folder somewhere where you can find it.
