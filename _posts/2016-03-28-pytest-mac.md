@@ -20,8 +20,9 @@ Getting Mac OS X
 
 In the past, I've managed to manually install some hacked version of Mac OS X Mavericks into
 VirtualBox and SSH into it from my Fedora host. I've used that virtual machine a lot to test my projects.
-However, the way of installing it was not very straight-forward. Recently a friend showed me that I
-can set up a virtual Mac OS X using Vagrant, in an automated fashion.
+However, the way of installing it was not very straight-forward. Recently
+[@Syky27](https://twitter.com/syky27) showed me that I can set up a virtual Mac OS X using Vagrant,
+in an automated fashion.
 
 First you'll need [Vagrant](https://www.vagrantup.com/). On Fedora, you can use the one packaged in
 the distribution and just do `dnf install vagrant`. I've used VirtualBox provider for it, because
