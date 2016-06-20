@@ -68,8 +68,8 @@ for multiple projects, it might be a good idea to put stuff into virtualenvs:
 
 **Note:** You don't need py.test to be present on the Mac.
 
-Running your tests on Mac, from you Linux, without pain
--------------------------------------------------------
+Running your tests on Mac, from your Linux, without pain
+--------------------------------------------------------
 
 In order to be able to SSH to your virtual Mac from anywhere, we ask Vagrant for the SSH config (we are back on our main system now):
 
