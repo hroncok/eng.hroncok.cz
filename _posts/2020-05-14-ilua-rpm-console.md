@@ -72,7 +72,14 @@ import sys
 from ctypes import cdll, c_char_p
 
 
+librpm = cdll.LoadLibrary("librpm.so.9")
 librpmio = cdll.LoadLibrary("librpmio.so.9")
+
+
+# Load general configuration (such as macros defined in standard places)
+# Second argument is target platform, NULL is the default
+librpm.rpmReadConfigFiles(librpm.rpmcliRcfile, None)
+
 
 adjust_path = b"""
 if os.getenv("LUA_PATH") then
