@@ -66,39 +66,7 @@ librpmio.rpmluaRunScript(None, c_char_p(b"rpm.interactive()"), None)
 
 It works. A little tweaking to support ILua as well as other use cases:
 
-```python
-#!/usr/bin/python3
-import sys
-from ctypes import cdll, c_char_p
-
-
-librpm = cdll.LoadLibrary("librpm.so.9")
-librpmio = cdll.LoadLibrary("librpmio.so.9")
-
-
-# Load general configuration (such as macros defined in standard places)
-# Second argument is target platform, NULL is the default
-librpm.rpmReadConfigFiles(librpm.rpmcliRcfile, None)
-
-
-adjust_path = b"""
-if os.getenv("LUA_PATH") then
-    package.path =  os.getenv("LUA_PATH") .. ";" .. package.path
-end
-"""
-
-# first argument is an "rpmlua" pointer, but uses global one when NULL
-# second argument is code
-# third argument is "name", used in errors, reasonable default when NULL
-librpmio.rpmluaRunScript(None, c_char_p(adjust_path), None)
-
-if len(sys.argv) > 1:
-    sys.argv[-1] = '/dev/stdin' if sys.argv[-1] == '-' else sys.argv[-1]
-    # first argument as above, second argument is path
-    librpmio.rpmluaRunScriptFile(None, c_char_p(sys.argv[-1].encode("utf-8")))
-else:
-    librpmio.rpmluaRunScript(None, c_char_p(b"rpm.interactive()"), None)
-```
+{% gist 63c36381e2daa12446cb70c1a30bef2e %}
 
 Note by Panu: *`rpmluaRunScript()` and `rpmluaRunScriptFile()` are not considered public API and are not available in the public headers on C side, although the symbols are accessible in the ABI. So they are subject to change without further notice, although the likelihood of that happening doesn't seem that great, they've been exactly the way are since their inception 16 years ago.*
 
