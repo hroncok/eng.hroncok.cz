@@ -75,3 +75,14 @@ And now I have an interactive IPython-like shell for RPM embedded Lua with comma
 ![ILua using a Python ctypes wrapper over RPM Lua](/assets/2020-05-14-ilua-rpm-console/irpmlua.png)
 
 Enjoy! PS: ILua is on [package review for Fedora](https://bugzilla.redhat.com/show_bug.cgi?id=1834280), but can be safely pip-installed in the meantime.
+
+---
+
+## Update from 2022
+
+On RPM 4.18, the script above does not work, but you can use this instead:
+
+```sh
+#!/usr/bin/sh -eu
+/usr/bin/rpmlua -e 'package.path =  os.getenv("LUA_PATH") .. ";" .. package.path' "$@"
+```
