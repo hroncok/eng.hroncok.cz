@@ -70,6 +70,8 @@ It works. A little tweaking to support ILua as well as other use cases:
 
 Note by Panu: *`rpmluaRunScript()` and `rpmluaRunScriptFile()` are not considered public API and are not available in the public headers on C side, although the symbols are accessible in the ABI. So they are subject to change without further notice, although the likelihood of that happening doesn't seem that great, they've been exactly the way are since their inception 16 years ago.*
 
+To use this, put the script on your `$PATH` and invoke `ilua -i <name_of_the_script>`.
+
 And now I have an interactive IPython-like shell for RPM embedded Lua with command history, line editing, completion and more:
 
 ![ILua using a Python ctypes wrapper over RPM Lua](/assets/2020-05-14-ilua-rpm-console/irpmlua.png)
