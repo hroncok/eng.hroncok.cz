@@ -1,0 +1,4 @@
+{% if page.mastodon_post %}
+<div id="mastodon-comments" data-post-url="{{ page.mastodon_post }}"></div>
+<script src="{{ ASSET_PATH }}/js/mastodon-comments.js"></script>
+{% endif %}

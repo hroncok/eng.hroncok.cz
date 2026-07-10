@@ -83,7 +83,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : false
+    provider : mastodon
     disqus :
       short_name : mirohronok
     livefyre :
