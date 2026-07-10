@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Miro Hrončok
-tagline: My English blog about everything
+tagline: My engineering blog
 ---
 {% include JB/setup %}
 
